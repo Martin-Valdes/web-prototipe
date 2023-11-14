@@ -1,0 +1,37 @@
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    width: 100%;
+    height: 8.125rem;
+    position:fixed;
+    h1{
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 1.875rem;
+    }
+    .navbar{
+        ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 1.875rem;
+        gap: 1.25rem;
+        list-style: none;
+            li{
+                a{
+                    text-decoration: none;
+                    font-size: 1.25rem;
+                    color: black;
+                    font-family: 'Cinzel Decorative', cursive;
+                }
+                a:hover{
+                    color: crimson;
+                    font-size: 1.5625rem;
+                }
+            }
+        }
+    }
+}

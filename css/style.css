@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cinzel+Decorative&display=swap");
+/*
+
+    font-family: 'Berkshire Swash', cursive;
+
+    font-family: 'Cinzel Decorative', cursive;
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: aquamarine;
+  width: 100%;
+  height: 8.125rem;
+  position: fixed; }
+  header h1 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 1.875rem; }
+  header .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 1.875rem;
+    gap: 1.25rem;
+    list-style: none; }
+    header .navbar ul li a {
+      text-decoration: none;
+      font-size: 1.25rem;
+      color: black;
+      font-family: 'Cinzel Decorative', cursive; }
+    header .navbar ul li a:hover {
+      color: crimson;
+      font-size: 1.5625rem; }
+
+main {
+  display: grid;
+  width: 100%;
+  min-height: calc(100vh - 8.125rem - 3.125rem);
+  background: #22c1c3;
+  background: linear-gradient(0deg, #22c1c3 0%, #fdbb2d 100%);
+  align-items: center;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "a b c" "d e f";
+  justify-content: center;
+  padding-top: 8.125rem; }
+  main .cardUno {
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    color: black;
+    padding: 1.875rem;
+    justify-content: center; }
+    main .cardUno img {
+      width: 19.875rem;
+      height: 9.9375rem;
+      margin-bottom: .625rem; }
+    main .cardUno h4 {
+      padding-bottom: .625rem;
+      font-size: 1.25rem; }
+  main .cardDos {
+    grid-area: b;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    color: black;
+    padding: 1.875rem;
+    justify-content: center; }
+    main .cardDos img {
+      width: 19.875rem;
+      height: 9.9375rem;
+      margin-bottom: .625rem; }
+    main .cardDos h4 {
+      padding-bottom: .625rem;
+      font-size: 1.25rem; }
+  main .cardTres {
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    color: black;
+    padding: 1.875rem;
+    justify-content: center; }
+    main .cardTres img {
+      width: 19.875rem;
+      height: 9.9375rem;
+      margin-bottom: .625rem;
+      background-color: aliceblue; }
+    main .cardTres h4 {
+      padding-bottom: .625rem;
+      font-size: 1.25rem; }
+  main .cardCuatro {
+    grid-area: d;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    color: black;
+    padding: 1.875rem;
+    justify-content: center; }
+    main .cardCuatro img {
+      width: 19.875rem;
+      height: 9.9375rem;
+      margin-bottom: .625rem;
+      background-color: aliceblue; }
+    main .cardCuatro h4 {
+      padding-bottom: .625rem;
+      font-size: 1.25rem; }
+  main .cardCinco {
+    grid-area: e;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    color: black;
+    padding: 1.875rem;
+    justify-content: center; }
+    main .cardCinco img {
+      width: 19.875rem;
+      height: 9.9375rem;
+      margin-bottom: .625rem;
+      background-color: aliceblue; }
+    main .cardCinco h4 {
+      padding-bottom: .625rem;
+      font-size: 1.25rem; }
+  main .cardSeis {
+    grid-area: f;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    color: black;
+    padding: 1.875rem;
+    justify-content: center; }
+    main .cardSeis img {
+      width: 19.875rem;
+      height: 9.9375rem;
+      margin-bottom: .625rem;
+      background-color: aliceblue; }
+    main .cardSeis h4 {
+      padding-bottom: .625rem;
+      font-size: 1.25rem; }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: aquamarine;
+  justify-content: space-between;
+  padding: 3.125rem; }

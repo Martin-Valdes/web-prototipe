@@ -1,0 +1,103 @@
+main{
+    display: grid;
+    width: 100%;
+    min-height: calc(100vh - 8.125rem - 3.125rem);
+    
+background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "a b c"
+    "d e f"
+    ;
+    justify-content: center;
+    padding-top: 8.125rem;
+    .cardUno{
+        @include cards(a, column, 80%, 80%, black, 1.875rem,center);;
+
+        img{
+            width: 19.875rem;
+            height: 9.9375rem;
+            margin-bottom: .625rem;
+        }
+        h4{
+            padding-bottom: .625rem;
+            font-size: 1.25rem;
+        }
+
+    }
+    .cardDos{
+        @include cards(b, column, 80%, 80%, black, 1.875rem,center);
+        img{
+            width: 19.875rem;
+            height: 9.9375rem;
+            margin-bottom: .625rem;
+        }
+        h4{
+            padding-bottom: .625rem;
+            font-size: 1.25rem;
+        }
+
+    }
+    .cardTres{
+        @include cards(c, column, 80%, 80%, black, 1.875rem,center);
+
+        img{
+            width: 19.875rem;
+            height: 9.9375rem;
+            margin-bottom: .625rem;
+            background-color: aliceblue;
+        }
+        h4{
+            padding-bottom: .625rem;
+            font-size: 1.25rem;
+        }
+
+    }
+    .cardCuatro{
+        @include cards(d, column, 80%, 80%, black, 1.875rem,center);
+
+        img{
+            width: 19.875rem;
+            height: 9.9375rem;
+            margin-bottom: .625rem;
+            background-color: aliceblue;
+        }
+        h4{
+            padding-bottom: .625rem;
+            font-size: 1.25rem;
+        }
+
+    }
+    .cardCinco{
+        @include cards(e, column, 80%, 80%, black, 1.875rem,center);
+
+        img{
+            width: 19.875rem;
+            height: 9.9375rem;
+            margin-bottom: .625rem;
+            background-color: aliceblue;
+        }
+        h4{
+            padding-bottom: .625rem;
+            font-size: 1.25rem;
+        }
+
+    }
+    .cardSeis{
+        @include cards(f, column, 80%, 80%, black, 1.875rem,center);
+        img{
+            width: 19.875rem;
+            height: 9.9375rem;
+            margin-bottom: .625rem;
+            background-color: aliceblue;
+        }
+        h4{
+            padding-bottom: .625rem;
+            font-size: 1.25rem;
+        }
+
+    }
+}
