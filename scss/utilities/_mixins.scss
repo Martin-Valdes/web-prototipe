@@ -1,0 +1,12 @@
+@mixin cards($area, $direction, $width, $height, $color, $padding, $content){
+    grid-area: $area;
+    display: flex;
+    flex-direction: $direction;
+    width: $width;
+    height: $height;
+    color: $color;
+    padding: $padding;
+    justify-content: $content;
+    justify-self: center;
+    align-self: center;
+}

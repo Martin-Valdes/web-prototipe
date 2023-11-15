@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cinzel+Decorative&display=swap");
+/*
+
+    font-family: 'Berkshire Swash', cursive;
+
+    font-family: 'Cinzel Decorative', cursive;
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: aquamarine;
+  width: 100%;
+  height: 8.125rem;
+  position: relative; }
+  header h1 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 1.875rem; }
+  header .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 1.875rem;
+    gap: 1.25rem;
+    list-style: none; }
+    header .navbar ul li a {
+      text-decoration: none;
+      font-size: 1.25rem;
+      color: black;
+      font-family: 'Cinzel Decorative', cursive; }
+    header .navbar ul li a:hover {
+      color: crimson;
+      font-size: 1.5625rem; }
+
+.gallery {
+  display: grid;
+  width: 100%;
+  min-height: calc(100vh - 3.125rem);
+  background-color: #333335;
+  grid-template-columns: 3, 25%;
+  grid-template-rows: auto auto;
+  grid-template-areas: "a b c" "d e f";
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-top: 1.25rem; }
+  .gallery div {
+    width: 100%;
+    height: 100%; }
+  .gallery p {
+    color: white; }
+  .gallery .cardUno {
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    color: black;
+    padding: 1.875rem;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    color: aqua; }
+    .gallery .cardUno img {
+      width: 100%;
+      height: 70%;
+      padding-bottom: .625rem;
+      transition: 0.8s; }
+    .gallery .cardUno img:hover {
+      box-shadow: 0px 0px 5px 5px #ec731e; }
+    .gallery .cardUno h4 {
+      font-size: 1.25rem; }
+  .gallery .cardDos {
+    grid-area: b;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    color: black;
+    padding: 1.875rem;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    color: aqua; }
+    .gallery .cardDos img {
+      width: 100%;
+      height: 70%;
+      padding-bottom: .625rem;
+      transition: 0.8s; }
+    .gallery .cardDos img:hover {
+      box-shadow: 0px 0px 5px 5px #ec731e; }
+    .gallery .cardDos h4 {
+      font-size: 1.25rem; }
+  .gallery .cardTres {
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    color: black;
+    padding: 1.875rem;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    color: aqua; }
+    .gallery .cardTres img {
+      width: 100%;
+      height: 70%;
+      background-color: aliceblue;
+      transition: 0.8s; }
+    .gallery .cardTres img:hover {
+      box-shadow: 0px 0px 5px 5px #ec731e; }
+    .gallery .cardTres h4 {
+      font-size: 1.25rem; }
+    .gallery .cardTres p {
+      margin-top: .625rem; }
+  .gallery .cardCuatro {
+    grid-area: d;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    color: black;
+    padding: 1.875rem;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    color: aqua; }
+    .gallery .cardCuatro img {
+      width: 100%;
+      height: 80%;
+      padding-bottom: .625rem;
+      background-color: aliceblue;
+      transition: 0.8s; }
+    .gallery .cardCuatro img:hover {
+      box-shadow: 0px 0px 5px 5px #ec731e; }
+    .gallery .cardCuatro h4 {
+      font-size: 1.25rem; }
+  .gallery .cardCinco {
+    grid-area: e;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    color: black;
+    padding: 1.875rem;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    color: aqua; }
+    .gallery .cardCinco img {
+      width: 100%;
+      height: 70%;
+      padding-bottom: .625rem;
+      transition: 0.8s; }
+    .gallery .cardCinco img:hover {
+      box-shadow: 0px 0px 5px 5px #ec731e; }
+    .gallery .cardCinco h4 {
+      font-size: 1.25rem; }
+  .gallery .cardSeis {
+    grid-area: f;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    color: black;
+    padding: 1.875rem;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    color: aqua; }
+    .gallery .cardSeis img {
+      width: 100%;
+      height: 70%;
+      padding-bottom: .625rem;
+      transition: 0.8s; }
+    .gallery .cardSeis img:hover {
+      box-shadow: 0px 0px 5px 5px #ec731e; }
+    .gallery .cardSeis h4 {
+      font-size: 1.25rem; }
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/img/background-responsive.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: darkslategrey; }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: aquamarine;
+  justify-content: space-between;
+  position: relative;
+  height: 6.25rem; }
